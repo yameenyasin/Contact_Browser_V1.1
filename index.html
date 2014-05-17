@@ -14,7 +14,7 @@
 <body ng-controller="appController">
 
     <nav class="navbar navbar-inverse" role="navigation" ng-include src="headerURL"></nav>
-    
+
     <!--loader-->
     <section class="loader-wrapper" ng-show="loader">
         <section class="loader"></section>
@@ -22,6 +22,15 @@
 
 
     <div class="container">
+        <!--Search Box-->
+        <div class="col-md-12">
+            <form class="navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" ng-model="searchText.name">
+                </div>
+            </form>
+        </div>
+        <!-- Main Application Content-->
         <div class="row">
             <div class="col-md-8" ng-include src="contactURL"></div>
             <div class="col-md-4" ng-include src="propertyURL"></div>

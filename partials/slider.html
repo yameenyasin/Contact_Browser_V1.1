@@ -3,9 +3,12 @@
     <div class="carousel-inner">
         <div class="item" ng-class="{active : $first}" ng-repeat="contactList in Contacts">
             <div class="row contact-wrapper">
-                <div class="col-md-3  contact-list box-shadow" ng-repeat="contact in contactList" ng-click="setCurrentContact(contact)">
+                <div class="col-md-3  contact-list box-shadow" ng-repeat="contact in contactList | filter:searchText" ng-click="setCurrentContact(contact)">
                     <img ng-src="images/{{contact.gender}}.png">
-                    <label>{{contact.name}}</label>
+                    <label>
+                        <!--Display name for each contact-->
+                        <a href="#" ng-click="setCurrentContact(contact)">{{contact.name}}</a>
+                    </label>
                 </div>
             </div>
         </div>
