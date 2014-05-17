@@ -1,0 +1,26 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="item" ng-class="{active : $first}" ng-repeat="contactList in Contacts">
+            <div class="row contact-wrapper">
+                <div class="col-md-3  contact-list box-shadow" ng-repeat="contact in contactList" ng-click="setCurrentContact(contact)">
+                    <img ng-src="images/{{contact.gender}}.png">
+                    <label>{{contact.name}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--controls-->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" ng-click="hidePropertyWindow()">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" ng-click="hidePropertyWindow()">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" ng-class="{active : $first}" ng-repeat="contactList in Contacts" ng-click="hidePropertyWindow()" data-slide-to="{{$index}}"></li>
+    </ol>
+</div>

@@ -1,0 +1,63 @@
+<div class="panel panel-default  box-shadow">
+    <!--Property Window Panel Heading-->
+    <div class="panel-heading">
+        <h3 class="panel-title">Properties Window</h3>
+    </div>
+    <!--Property Window Panel Body-->
+    <div class="panel-body" ng-show="currentContact">
+        <!--Name of Contact-->
+        <div class="form-group">
+            <span class="glyphicon glyphicon-user"></span>
+            <label>Name</label>
+            <input type="text" ng-model="currentContact.name" class="form-control" maxlength="20">
+        </div>
+        <!--Gender-->
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="currentContact.gender" value="Male">Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="currentContact.gender" value="Female">Female
+                </label>
+            </div>
+        </div>
+        <!--Country-->
+        <div class="form-group">
+            <label>Country</label>
+            <select class="selectpicker form-control" ng-model="currentContact.country">
+                <option>China</option>
+                <option>Germany</option>
+                <option>India</option>
+                <option>Japan</option>
+                <option>Korea</option>
+                <option>Singapore</option>
+            </select>
+        </div>
+        <!--Phone Number-->
+        <div class="form-group">
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            <label>Phone</label>
+            <input type="text" ng-model="currentContact.phone" class="form-control" maxlength="10">
+        </div>
+        <!--Checkbox to make contact favorite-->
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="currentContact.favorites" value="Favorite">Favorite
+                </label>
+            </div>
+        </div>
+        <!--Block contact checkboox-->
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="currentContact.blocked" value="Blocked">Blocked
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

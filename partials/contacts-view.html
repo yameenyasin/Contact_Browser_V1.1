@@ -1,0 +1,10 @@
+<div class="col-md-3 contact-list box-shadow" ng-repeat="contact in Contacts | filter:searchText " ng-click="setCurrentContact(contact)">
+    <!--Icon for each contact-->
+    <img ng-src="images/{{contact.gender}}.png">
+    <label>
+        <!--Display name for each contact-->
+        <a href="#" ng-click="setCurrentContact(contact)">
+            {{contact.name}}
+        </a>
+    </label>
+</div>

@@ -1,0 +1,105 @@
+[[
+    {
+        "id": "01",
+        "name": "ContactName1",
+        "gender": "Male",
+        "country": "China",
+        "phone": "9906123456",
+        "favorites": true,
+        "blocked": false
+    }, {
+        "id": "02",
+        "name": "ContactName2",
+        "gender": "Female",
+        "country": "India",
+        "phone": "8055536343",
+        "favorites": false,
+        "blocked": false
+    }, {
+        "id": "03",
+        "name": "ContactName3",
+        "gender": "Male",
+        "country": "Germany",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }
+], [
+    {
+        "id": "04",
+        "name": "ContactName4",
+        "gender": "Male",
+        "country": "Japan",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }, {
+        "id": "05",
+        "name": "ContactName5",
+        "gender": "Male",
+        "country": "Singapore",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }, {
+        "id": "05",
+        "name": "ContactName6",
+        "gender": "Male",
+        "country": "Singapore",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }
+], [
+    {
+        "id": "07",
+        "name": "ContactName7",
+        "gender": "Male",
+        "country": "Japan",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }, {
+        "id": "08",
+        "name": "ContactName8",
+        "gender": "Male",
+        "country": "Singapore",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }, {
+        "id": "09",
+        "name": "ContactName9",
+        "gender": "Male",
+        "country": "Singapore",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }
+], [
+    {
+        "id": "10",
+        "name": "ContactName10",
+        "gender": "Male",
+        "country": "Japan",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }, {
+        "id": "11",
+        "name": "ContactName11",
+        "gender": "Male",
+        "country": "Singapore",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }, {
+        "id": "12",
+        "name": "ContactName12",
+        "gender": "Male",
+        "country": "Singapore",
+        "phone": "7774005115",
+        "favorites": true,
+        "blocked": true
+    }
+]]
