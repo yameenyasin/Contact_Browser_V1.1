@@ -2,20 +2,14 @@
 function appController($scope, $http, $timeout) {
     $scope.loader = true;
     var promise = $http.get("contacts.json");
-    
-    $('#myCarousel').carousel({
-        interval: false
-    });
 
     promise.success(function (data, status) {
         //add contact json object to the angular scope
         $scope.Contacts = data;
-        $scope.moreContacts = data.slice(1, data.length);
-        console.log(data);
-        console.log("moreContacts", $scope.moreContacts);
         console.log('AJAX succesfull, status: ', status);
+
         //simulate client server comm
-        $timeout(function() {
+        $timeout(function () {
             $scope.loader = false;
         }, 3000);
     });
@@ -55,3 +49,8 @@ function appController($scope, $http, $timeout) {
         $scope.currentContact = null;
     };
 }
+
+// Disble Carousel 
+$('#myCarousel').carousel({
+    interval: false
+});

@@ -41,32 +41,33 @@
     -o-transition: 0.3s ease-in-out left;
     transition: 0.3s ease-in-out left;
 }
+
+/*Loader Module cascade rules*/
 .loader-wrapper {
-    background: rgba(0, 0, 0, 1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 55;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 55;
 }
+
 .loader {
-    background: url(../images/loading.gif);
-    background-repeat: no-repeat;
-    background-position-x: 124px;
-    background-position-y: 124px;
-    position: absolute;
-    top: 30%;
-    z-index: 60;
-    width: 20%;
-    max-width: 960px;
-    min-width: 300px;
-    height: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+  background: url("../images/loading.gif") no-repeat scroll 50% 50% transparent;
+  position: absolute;
+  top: 30%;
+  z-index: 60;
+  width: 20%;
+  max-width: 960px;
+  min-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
+
 /*media queries*/
 
 @media(max-width:767px){
@@ -79,7 +80,7 @@
 @media(min-width:768px){
 
 .contact-list {
-    margin: 20px auto;
+    margin: 10px auto;
     overflow: hidden;
 }
 }
